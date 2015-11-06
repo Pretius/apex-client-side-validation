@@ -1,7 +1,7 @@
 {
   "name" : "Pretius Client Side Validation",
   "version" : "1.0",
-  "description" : "Pretius APEX Client Side Validation plugin was created due to lack of core functionality that allows user to run APEX defined validations on the fly (live) in APEX 4.x and 5.x.",
+  "description" : "The plugin is dynamic action plugin that allows user to validate form data according to defined APEX validations without submitting the page",
   "keywords" : ["validation", "client side"],
   "homepage" : "http://pretius.com/technologies/oracle-apex/",
   "bugs" : {
