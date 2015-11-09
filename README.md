@@ -1,7 +1,7 @@
 #Check our APEX Plugins
-* Pretius APEX Client Side Validation -> http://apex.pretius.com/apex/f?p=777:APEXCLIENTSIDEVALIDATION:::NO:50::
-* Pretius APEX Enhanced LOV item -> http://apex.pretius.com/apex/f?p=777:APEX_ENHANCED_LOV_ITEM:::NO:::
-* Pretius APEX Enhanced Column Attributes -> http://apex.pretius.com/apex/f?p=777:CHROME_PLUGIN:::NO:::
+* Pretius APEX Client Side Validation -> http://bit.ly/1NEPR5T
+* Pretius APEX Enhanced LOV item -> http://bit.ly/1iO8qrr
+* Pretius APEX Enhanced Column Attributes -> http://bit.ly/1GT5Pbg
 
 ##Intro
 **APEX Client Side Validation plugin** was created due to lack of core functionality that allows user to run APEX defined validations **on the fly (live)** in APEX 4.x and 5.x.
