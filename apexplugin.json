@@ -1,11 +1,11 @@
 {
   "name" : "Pretius Client Side Validation",
   "version" : "1.0",
-  "description" : "The plugin is dynamic action plugin that allows user to validate form data according to defined APEX validations without submitting the page",
-  "keywords" : ["validation", "client side"],
-  "homepage" : "http://pretius.com/technologies/oracle-apex/",
+  "description" : "This is dynamic action plugin that allows user to validate Form data according to predefined APEX validations without submitting the page.",
+  "keywords" : ["validation", "client-side", "live", "form"],
+  "homepage" : "http://pretius.com/technologies/apex-client-side-validation-plugin-2/",
   "bugs" : {
-    "url" : "http://apex.pretius.com",
+    "url" : "https://github.com/Pretius/apex-client-side-validation/issues",
     "email" : "apex@pretius.com"
   },
   "license" : "MIT",
@@ -21,7 +21,7 @@
   "oracle" : {
     "versions" : ["11.2.0.1", "12.1.0.1"],
     "apex" : {
-      "versions" : ["4.0.0", "5.0.0"],
+      "versions" : ["4.0.0", "4.1.0", "4.2.0", "5.0.0"],
       "plugin" : {
         "internalName" : "apex.client.side.validation",
         "type" : "dynamic action",
