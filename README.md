@@ -15,7 +15,7 @@ Bartosz Ostrowski | [@bostrowsk1](https://twitter.com/bostrowsk1) | bostrowski@p
 #### Dynamic action plugins
 * [Client Side Validation](http://apex.pretius.com/apex/f?p=105:CLIENT_SIDE_VALIDATION)
 * [Enhanced Modal dialog](http://apex.pretius.com/apex/f?p=105:ENHANCED_MODAL_PAGE)
-* [Enhanced LOV item](http://apex.pretius.com/apex/f?p=105:ENHANCED_LOV_ITEM_APEX_DA)
+* [Enhanced LOV item - tabular form](http://apex.pretius.com/apex/f?p=105:ENHANCED_LOV_ITEM_APEX_DA)
 
 #### Broswer plugins
 * [Enhanced Column Attributes](http://apex.pretius.com/apex/f?p=105:CHROME_EXTENSION)
