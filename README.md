@@ -4,18 +4,15 @@ The plugin is dynamic action plugin to validate APEX items according to defined 
 
 Live demo, instructions and more details about the plugin are available directly in [demo application](http://apex.pretius.com/apex/f?p=105:CLIENT_SIDE_VALIDATION).
 
-##Author
+##Authors
 Author | Twitter | E-mail
 -------|---------|-------
 Bartosz Ostrowski | [@bostrowsk1](https://twitter.com/bostrowsk1) | bostrowski@pretius.com
 
-###Pretius Sp. z o.o. Sp. K.
-WE DELIVER RELIABLE, USER-FRIENDLY SOFTWARE FOR MARKET LEADERS
-Przy Parku 2/3
-02-384 Warsaw, Poland
-
-[http://www.pretius.com](http://www.pretius.com)
-[office@pretius.com](office@pretius.com)
+####Pretius Sp. z o.o. Sp. K.
+Address: Przy Parku 2/2; 02-384 Warsaw, Poland
+Website: [http://www.pretius.com](http://www.pretius.com)
+e-mail: [office@pretius.com](office@pretius.com)
 
 ##Pretius Plugins for Oracle APEX
 #### Item plugins
