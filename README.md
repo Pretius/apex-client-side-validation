@@ -9,6 +9,14 @@ Author | Twitter | E-mail
 -------|---------|-------
 Bartosz Ostrowski | [@bostrowsk1](https://twitter.com/bostrowsk1) | bostrowski@pretius.com
 
+###Pretius Sp. z o.o. Sp. K.
+WE DELIVER RELIABLE, USER-FRIENDLY SOFTWARE FOR MARKET LEADERS
+Przy Parku 2/3
+02-384 Warsaw, Poland
+
+[http://www.pretius.com](http://www.pretius.com)
+[office@pretius.com](office@pretius.com)
+
 ##Pretius Plugins for Oracle APEX
 #### Item plugins
 * [Enhanced LOV item](http://apex.pretius.com/apex/f?p=105:ENHANCED_LOV_ITEM_APEX_ITEM)
