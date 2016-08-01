@@ -22,6 +22,7 @@ e-mail: [office@pretius.com](mailto:office@pretius.com)
 * [Client Side Validation](http://apex.pretius.com/apex/f?p=105:CLIENT_SIDE_VALIDATION)
 * [Enhanced Modal dialog](http://apex.pretius.com/apex/f?p=105:ENHANCED_MODAL_PAGE)
 * [Enhanced LOV item - tabular form](http://apex.pretius.com/apex/f?p=105:ENHANCED_LOV_ITEM_APEX_DA)
+* [Nested reports](http://apex.pretius.com/apex/f?p=105:NESTED_REPORTS)
 
 #### Broswer plugins
 * [Enhanced Column Attributes](http://apex.pretius.com/apex/f?p=105:CHROME_EXTENSION)
