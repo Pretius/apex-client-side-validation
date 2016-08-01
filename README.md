@@ -12,7 +12,7 @@ Bartosz Ostrowski | [@bostrowsk1](https://twitter.com/bostrowsk1) | bostrowski@p
 **Pretius Sp. z o.o. Sp. K.**  
 Address: Przy Parku 2/2; 02-384 Warsaw, Poland  
 Website: [http://www.pretius.com](http://www.pretius.com)  
-e-mail: [office@pretius.com](office@pretius.com)  
+e-mail: [office@pretius.com](mailto:office@pretius.com)  
 
 ##Pretius Plugins for Oracle APEX
 #### Item plugins
