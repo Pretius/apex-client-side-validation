@@ -1,3 +1,4 @@
+prompt --application/set_environment
 set define off verify off feedback off
 whenever sqlerror exit sql.sqlcode rollback
 --------------------------------------------------------------------------------
@@ -5,7 +6,7 @@ whenever sqlerror exit sql.sqlcode rollback
 -- ORACLE Application Express (APEX) export file
 --
 -- You should run the script connected to SQL*Plus as the Oracle user
--- APEX_050100 or as the owner (parsing schema) of the application.
+-- APEX_180200 or as the owner (parsing schema) of the application.
 --
 -- NOTE: Calls to apex_application_install override the defaults below.
 --
@@ -14,15 +15,10 @@ begin
 wwv_flow_api.import_begin (
  p_version_yyyy_mm_dd=>'2016.08.24'
 ,p_release=>'5.1.3.00.05'
-,p_default_workspace_id=>1672352206259312
-,p_default_application_id=>1000
+,p_default_workspace_id=>21717127411908241868
+,p_default_application_id=>103428
 ,p_default_owner=>'RD_DEV'
 );
-end;
-/
-prompt --application/ui_types
-begin
-null;
 end;
 /
 prompt --application/shared_components/plugins/dynamic_action/com_ais_live_validation
@@ -30,7 +26,7 @@ begin
 wwv_flow_api.create_plugin(
  p_id=>wwv_flow_api.id(8282892867757180115)
 ,p_plugin_type=>'DYNAMIC ACTION'
-,p_name=>'LIVE.VALIDATION'
+,p_name=>'COM.AIS.LIVE.VALIDATION'
 ,p_display_name=>'APEX Item Live Validation'
 ,p_category=>'EXECUTE'
 ,p_supported_ui_types=>'DESKTOP:JQM_SMARTPHONE'
@@ -50,18 +46,13 @@ wwv_flow_api.create_plugin(
 '    p_directory => p_plugin.file_prefix,',
 '    p_version   => NULL ',
 '  );',
-'',
 '  v_result.ajax_identifier := APEX_PLUGIN.GET_AJAX_IDENTifIER();',
-'',
 '  v_result.javascript_function := ''function() { live_validation(this);}'';    ',
-'',
 '  APEX_PLUGIN_UTIL.DEBUG_DYNAMIC_ACTION (',
 '    p_plugin         => p_plugin,',
 '    p_dynamic_action => p_dynamic_action',
 '  );  ',
-'',
 '  return v_result;',
-'',
 'EXCEPTION',
 '  WHEN OTHERS then',
 '    htp.p( SQLERRM );',
@@ -93,7 +84,6 @@ wwv_flow_api.create_plugin(
 '    out_result',
 '  from ',
 '    dual;',
-'    ',
 '  return out_result;',
 'end current_time_ms;',
 '  /* to perform bindings */',
@@ -101,9 +91,17 @@ wwv_flow_api.create_plugin(
 '    P_STRING IN VARCHAR2,',
 '    P_ESCAPE IN BOOLEAN DEFAULT FALSE )',
 '  RETURN VARCHAR2',
-'IS',
+'IS VR_STR VARCHAR2(32767) := P_STRING;',
+'VR_BINDS   SYS.DBMS_SQL.VARCHAR2_TABLE;',
 'BEGIN',
-'  RETURN REGEXP_REPLACE ( P_STRING, '':([a-zA-Z0-9_]*)'', '' V(''''\1'''') '' );',
+'VR_BINDS   := APEX_180200.WWV_FLOW_UTILITIES.GET_BINDS(VR_STR);',
+'IF VR_BINDS.COUNT > 0 THEN',
+' FOR I IN 1..VR_BINDS.COUNT LOOP',
+'  VR_STR   := REPLACE( VR_STR, VR_BINDS(I), '' V('''''' || LTRIM(VR_BINDS(I),'':'') || '''''') '' );',
+' END LOOP;',
+'END IF;',
+'VR_STR := APEX_PLUGIN_UTIL.REPLACE_SUBSTITUTIONS( P_VALUE    => VR_STR, P_ESCAPE   => TRUE);',
+'RETURN VR_STR;',
 'END PERFORM_BINDS;',
 '  /* function to get results */',
 'function get_func_boolean_result(',
@@ -995,7 +993,7 @@ wwv_flow_api.create_plugin(
 '- MUST_BE_NUMERIC => must be numeric',
 '- REQUIRED => required',
 '- DOES_NOT_MATCH_FORMAT => does not match format'))
-,p_version_identifier=>'2.2'
+,p_version_identifier=>'2.3'
 ,p_files_version=>56
 );
 end;
