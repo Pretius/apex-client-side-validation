@@ -26,7 +26,7 @@ begin
 wwv_flow_api.create_plugin(
  p_id=>wwv_flow_api.id(8282892867757180115)
 ,p_plugin_type=>'DYNAMIC ACTION'
-,p_name=>'COM.AIS.LIVE.VALIDATION'
+,p_name=>'LIVE.VALIDATION'
 ,p_display_name=>'APEX Item Live Validation'
 ,p_category=>'EXECUTE'
 ,p_supported_ui_types=>'DESKTOP:JQM_SMARTPHONE'
