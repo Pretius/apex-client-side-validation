@@ -1,18 +1,39 @@
+# Plugin is not supported for APEX 18 and above
+The plugin was built for APEX 4 and it is not recommended to use the plugin with current (v1.1) version.
+
 # Pretius Client Side Validation
-##### Oracle APEX dynamic action plugin v1.1
+##### Oracle APEX dynamic action plugin
 The plugin is dynamic action plugin to validate APEX items according to defined APEX item validations on browser side - without submitting the form.
 
 ## Preview
-TBD
+![Alt text](/preview.gif?raw=true "Preview")
 
 ## Table of Contents
-TBD
+- [License](#license)
+- [Demo Application](#demo-application)
+- [Features at Glance](#features-at-glance)
+- [Roadmap](#roadmap)
+- [Install](#install)
+  - [Installation package](#installation-package)
+  - [Install procedure](#install-procedure)
+- [Usage guide](#usage-guide)
+- [Plugin Settings](#plugin-settings)
+- [Changelog](#changelog)
+- [1.1](#11)
+- [1.0](#10)
+- [Known issues](#known-issues)
+- [About Author](#about-author)
+- [About Pretius](#about-pretius)
+- [Support](#support)
+  - [Free support](#free-support)
+  - [Paid support](#paid-support)
+
 
 ## License
 MIT
 
 ## Demo Application
-[http://apex.pretius.com/apex/f?p=105:NESTED_REPORTS](http://apex.pretius.com/apex/f?p=105:NESTED_REPORTS)
+[http://apex.pretius.com/apex/f?p=PLUGINS:CLIENT_SIDE_VALIDATION](http://apex.pretius.com/apex/f?p=PLUGINS:CLIENT_SIDE_VALIDATION)
 
 ## Features at Glance
 ### Live validation for APEX Items
@@ -59,7 +80,7 @@ To learn more about APEX templates configuration please read official Oracle APE
 ```Be sure you have read Live demo > Placeholders section before using the plugin.```
 
 ## Usage guide
-TBD
+Not yet described
 
 ## Plugin Settings
 Detailed information about how to use every attribute of the plugin is presented in built-in help texts in APEX Application Builder.
