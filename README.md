@@ -36,6 +36,12 @@ MIT
 [http://apex.pretius.com/apex/f?p=PLUGINS:CLIENT_SIDE_VALIDATION](http://apex.pretius.com/apex/f?p=PLUGINS:CLIENT_SIDE_VALIDATION)
 
 ## Features at Glance
+### Compatibility with Oracle APEX
+The plugin is compatible with Oracle APEX 4.x and 5.x.
+
+### Browser support
+The plugin was tested under three major browsers: Internet Explorer 8+, Firefox, Chrome.
+
 ### Live validation for APEX Items
 APEX item validations can be executed “on the fly” (eg. after leaving the textfield) and do not require pressing submit button and reloading the page.
 
