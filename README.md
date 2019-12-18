@@ -63,12 +63,12 @@ The plugin uses jQuery events to let you track every step of validation. Define 
 ## Install
 
 ### Installation package
-1. `src/TBD.sql` - the plugin installation files for Oracle APEX 5.1 or higher
+1. `src/dynamic_action_plugin_pretius_apex_client_side_validation.sql.sql` - the plugin installation files for Oracle APEX 5.1 or higher
 
 
 ### Install procedure
 To successfully install/update the plugin follow those steps:
-1. Install the plugin file `TBD.sql` using Oracle APEX plugin import wizard
+1. Install the plugin file `dynamic_action_plugin_pretius_apex_client_side_validation.sql.sql` using Oracle APEX plugin import wizard
 1. Configure application level componenets of the plugin
 
 During plug-in installation, you will be asked to confirm default value of Global Error Template attribute. The default value of the attribute is default value of Error Template in section Error display for APEX 5 Universal Theme label template.
@@ -105,7 +105,7 @@ Detailed information about how to use every attribute of the plugin is presented
 - Initial release
 
 ## Known issues
-* TBD
+* multiple AJAX calls sequences are corrupted
 
 ## About Author
 Author            | Website                                 | Github                                       | Twitter                                       | E-mail
