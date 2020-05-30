@@ -170,8 +170,8 @@ wwv_flow_api.create_plugin (
 '  v_item_names DBMS_SQL.VARCHAR2_TABLE;'||unistr('\000a')||
 '  '||unistr('\000a')||
 '  v_item_value v'||
-'archar2(100);'||unistr('\000a')||
-'  v_string varchar2(32000);'||unistr('\000a')||
+'archar2(32767);'||unistr('\000a')||
+'  v_string varchar2(32767);'||unistr('\000a')||
 '  v_test_number number;'||unistr('\000a')||
 '  v_isnumber boolean := false;'||unistr('\000a')||
 'begin'||unistr('\000a')||
