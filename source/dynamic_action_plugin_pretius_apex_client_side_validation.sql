@@ -811,8 +811,8 @@ wwv_flow_api.create_plugin (
 '| v_val_type || ''] not suppoerted. Sorry'';'||unistr('\000a')||
 '  WHEN OTHERS then'||unistr('\000a')||
 '    p_out_status := 2;'||unistr('\000a')||
-'    p_out_error_text := ''Error occured while performin validation: ''||replace(replace(DBMS_UTILITY.FORMAT_ERROR_BACKTRACE, chr(13), '' ''), chr(10), '' '');'||unistr('\000a')||
-'    p_out_msg := ''Error occured while performin validation: ''||replace(replace(DBMS_UTILITY.FORMAT_ERROR_BACKTRACE, chr(13), '' ''), chr(10), '' '');'||unistr('\000a')||
+'    p_out_error_text := ''Error occurred while performing validation: ''||replace(replace(DBMS_UTILITY.FORMAT_ERROR_BACKTRACE, chr(13), '' ''), chr(10), '' '');'||unistr('\000a')||
+'    p_out_msg := ''Error occurred while performing validation: ''||replace(replace(DBMS_UTILITY.FORMAT_ERROR_BACKTRACE, chr(13), '' ''), chr(10), '' '');'||unistr('\000a')||
 'end validate;'||unistr('\000a')||
 ''||unistr('\000a')||
 'p'||
@@ -1011,7 +1011,7 @@ wwv_flow_api.create_plugin (
 '        DISPLAY_AS_CODE VALIDATION_name,'||unistr('\000a')||
 '        v_item_id validation_expression1,'||unistr('\000a')||
 '        FORMAT_MASK validation_expression2,'||unistr('\000a')||
-'        ''item buildin validation ''||DISPLAY_AS_CODE VALIDATION_FAILURE_TEXT,'||unistr('\000a')||
+'        ''item building validation ''||DISPLAY_AS_CODE VALIDATION_FAILURE_TEXT,'||unistr('\000a')||
 '        999999999999 VALIDATION_SEQUENCE,'||unistr('\000a')||
 '        null CONDITION_TYPE,'||unistr('\000a')||
 '        null CONDITION_TYPE_CODE,'||unistr('\000a')||
@@ -1033,7 +1033,7 @@ wwv_flow_api.create_plugin (
 '        ''ITEM_REQUIRED'','||unistr('\000a')||
 '        v_item_id,'||unistr('\000a')||
 '        FORMAT_MASK,'||unistr('\000a')||
-'        ''item buildin validation ITEM_'||
+'        ''item building validation ITEM_'||
 'REQUIRED'','||unistr('\000a')||
 '        999999999999,'||unistr('\000a')||
 '        null,'||unistr('\000a')||
@@ -1069,10 +1069,10 @@ wwv_flow_api.create_plugin (
 '      v_val_conditions( v_val_conditions.count+1 ) := htf.escape_sc( v_cond_out_msg );'||unistr('\000a')||
 ''||unistr('\000a')||
 '      if v_cond_out_run = 2 then'||unistr('\000a')||
-'        v_val_msges( v_val_msges.count+1) := htf.escape_sc( ''Error occured in validation.'');'||unistr('\000a')||
+'        v_val_msges( v_val_msges.count+1) := htf.escape_sc( ''Error occurred in validation.'');'||unistr('\000a')||
 '        v_val_statuses( v_val_statuses.count+1 ) := ''"error"'||
 ''';    '||unistr('\000a')||
-'        v_validation_msg := ''Error occured in validation.'';'||unistr('\000a')||
+'        v_validation_msg := ''Error occurred in validation.'';'||unistr('\000a')||
 '        raise e_validation_failed; '||unistr('\000a')||
 '      else'||unistr('\000a')||
 '        v_val_statuses( v_val_statuses.count+1 ) := ''null'';'||unistr('\000a')||
@@ -1110,7 +1110,7 @@ wwv_flow_api.create_plugin (
 '      raise e_validation_failed; '||unistr('\000a')||
 '    else --2'||unistr('\000a')||
 '      v_val_statuses( v_val_statuses.count+1 ) := ''"error"'';'||unistr('\000a')||
-'      v_validation_msg := ''Error occured while performin validation.'';'||unistr('\000a')||
+'      v_validation_msg := ''Error occurred while performing validation.'';'||unistr('\000a')||
 '      raise e_validation_failed; '||unistr('\000a')||
 '    end if;'||unistr('\000a')||
 ''||unistr('\000a')||
