@@ -6,7 +6,7 @@ The plugin was built for APEX 4 and it is not recommended to use the plugin with
 The plugin is dynamic action plugin to validate APEX items according to defined APEX item validations on browser side - without submitting the form.
 
 ## Preview
-![Alt text](/preview.gif?raw=true "Preview")
+![Alt text](images/preview.gif?raw=true "Preview")
 
 ## Table of Contents
 - [License](#license)

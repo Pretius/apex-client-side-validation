@@ -1,16 +1,16 @@
 {
-  "name" : "Pretius Context Menu",
-  "version" : "1.1.0",
-  "description" : "Pretius Context Menu is dynamic action plugin implementing APEX popup menu based on defined APEX list. The plugin can be attached to any HTML element and renders entries according to authorisation scheme result. Menu entries can be extended by overriding behaviour, dynamically adding submenu and by adding new entries.",
-  "keywords" : ["menu", "context", "popup menu", "list", "popup"],
-  "homepage" : "https://github.com/bostrowski/Pretius-APEX-Context-Menu",
+  "name" : "Pretius Client Side Validation",
+  "version" : "1.1",
+  "description" : "The plugin is dynamic action plugin to validate APEX items according to defined APEX item validations on browser side - without submitting the form.",
+  "keywords" : ["validation", "client-side", "live", "form"],
+  "homepage" : "https://github.com/Pretius/apex-client-side-validation",
   "bugs" : {
-    "url" : "https://github.com/bostrowski/Pretius-APEX-Context-Menu/issues",
-    "email" : "apex-plugins@pretius.com"
+    "url" : "https://github.com/Pretius/apex-client-side-validation/issues",
+    "email" : "apex-plugins@pretius.com",
   },
   "license" : "MIT",
   "commercial" : "No",
-  "commercially_supported":"Yes",  
+  "commercially_supported":"Yes",
   "author" : {
     "name" : "Pretius",
     "email" : "apex-plugins@pretius.com",
@@ -19,26 +19,17 @@
   },
   "repository" : {
     "type" : "git",
-    "url" : "https://github.com/bostrowski/Pretius-APEX-Context-Menu.git"
+    "url" : "https://github.com/Pretius/apex-client-side-validation.git"
   },
-  "oracle": {
-    "versions": [
-      "11.2.0.1",
-      "12.1.0.1",
-      "12.2.0.1"
-    ],
-    "apex": {
-      "versions": [
-        "5.1.0",
-        "18.1.0",
-        "18.2.0",
-        "19.1.0"
-      ],
+  "oracle" : {
+    "versions" : ["11.2.0.1", "12.1.0.1"],
+    "apex" : {
+      "versions" : ["4.0.0", "4.1.0", "4.2.0", "5.0.0"],
       "plugin" : {
-        "internalName" : "COM.PRETIUS.APEX.CONTEXTMENU",
+        "internalName" : "apex.client.side.validation",
         "type" : "dynamic action",
-        "demo" : "https://apex.oracle.com/pls/apex/f?p=PRETIUS_APEX_CONTEXT_MENU",
-        "previewImage" : "https://raw.githubusercontent.com/bostrowski/Pretius-APEX-Context-Menu/master/images/image_preview.gif"
+        "demo" : "http://apex.pretius.com/apex/f?p=105:CLIENT_SIDE_VALIDATION",
+        "previewImage" : "https://raw.githubusercontent.com/Pretius/apex-client-side-validation/master/preview.png"
       }
     }
   }
