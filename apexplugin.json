@@ -29,7 +29,7 @@
         "internalName" : "apex.client.side.validation",
         "type" : "dynamic action",
         "demo" : "http://apex.pretius.com/apex/f?p=105:CLIENT_SIDE_VALIDATION",
-        "previewImage" : "https://raw.githubusercontent.com/Pretius/apex-client-side-validation/master/preview.png"
+        "previewImage" : "https://raw.githubusercontent.com/Pretius/apex-client-side-validation/master/images/preview.gif"
       }
     }
   }
